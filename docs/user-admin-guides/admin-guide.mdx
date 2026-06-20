@@ -1,0 +1,40 @@
+---
+sidebar_position: 2
+---
+
+# Administrator Guide
+
+This is a procedural topic I developed for the Dayforce Payroll Admin Guide, intended for payroll specialists who configure the software.
+I converted the content to Markdown and included a screenshot of the original MadCap Flare web output.
+
+
+
+
+
+# Enter Direct Deposit Information for UK Employees
+
+:::info
+**Role feature access**: Application Container > People > Payroll > Direct Deposit > Direct Deposit
+:::
+
+For general information about adding direct deposit records, see *Payroll Direct Deposit Information*.
+
+To define direct deposit information for employees in the United Kingdom:
+
+1. Go to People, open the employee profile, and click **Payroll > Direct Deposit**.
+2. Click **Add**.
+3. In the **Banking Details** section, enter the sort code, the employee's account number, and optionally, the building society number in the corresponding fields.
+4. If your employee has only one direct deposit account, in the **General Details** section, select the **Remainder** checkbox.
+   
+   If your employee has more than one direct deposit account, you must define how the pay is distributed between accounts:
+
+   1. Designate one account to accept any residual pay amounts that remain after distribution. Select the **Remainder** checkbox and leave the **Deposit Amount** field blank.
+   2. For each of the other accounts, in the **Deposit Type** drop-down list, select whether Dayforce should use amount or percentage to calculate the deposit. In the **Deposit Amount** field, enter the amount or percentage of the pay to deposit into that account.
+   3. Click **Move Down** to move the designated “remainder” account to the bottom of the table.
+   4. For the other accounts, click **Move Up** to assign the processing order during distribution. For example, if you move an account to the top of the table, the paycheck amount is distributed into this account first before the other accounts.
+
+6. Click **Save**.
+
+## MadCap Flare Output
+
+![An image from the static](/samples/admin-guide.jpg)
