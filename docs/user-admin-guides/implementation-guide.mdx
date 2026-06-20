@@ -1,0 +1,45 @@
+---
+sidebar_position: 1
+---
+
+# SaaS Implementation Guide
+
+This is a procedural topic I developed for the Dayforce Implementation Guide, intended for internal and external implementation teams.
+I included a a Markdown conversion and a screenshot of the original MadCap Flare web output.
+
+# Configure UK Employees as Pensioners
+
+When you start paying a workplace pension to a UK employee, you need to configure their employee record so that Dayforce tracks their pension information and includes it in the Full Payment Submission (FPS) file.
+
+:::info 
+
+Role feature access:
+
+- Application Container > People > Employee Profile > Employment > Employment Settings > Employment Type
+- Payroll Set-up > Payroll Set-up > Allow Pension/Contractor Configuration
+- Application Container > People > Employee Profile > Payroll > Tax Definitions
+
+:::
+
+To configure UK employees as pensioners
+
+1. Go to **People**, open the employee profile, and click **Employment > Employment Settings**.
+2. In the **Employment Type** tab, click **Add** and complete the following:
+   1. In **Employment Type**, select **Pensioner**.
+   2. Change the start date as needed.
+   3. In **Pension Type**, select the type of pension you're reporting to the HMRC for this employee.
+   4. Click **Save**.
+
+3. In the **Payroll > Tax Definitions** screen, complete the following:
+   1. In the **UK Tax Info** section, click **Add**.
+   2. Change the start date as needed.
+   3. In **Change Reason**, select **New Pension Starter**.
+   4. In the **UK NI Info** section, click **Add**.
+   5. Change the start date as needed.
+   6. In **NI Letter**, select **X**.
+   7. In **Change Reason**, select **NI Letter Update**.
+   8. Click **Save**.
+
+## MadCap Flare Output
+
+![An image from the static](/samples/implementation-guide.jpg)
