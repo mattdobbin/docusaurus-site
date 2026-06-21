@@ -99,8 +99,8 @@ const config = {
           },
           {to: '/ai-workflows', label: 'AI Worflows', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://mattdobbin.github.io/docusaurus-site/files/matt-dobbin-resume-2025.pdf',
+            label: 'Resume',
             position: 'right',
           },
         ],
