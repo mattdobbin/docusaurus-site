@@ -39,3 +39,7 @@
 ol ol {
   list-style-type: lower-alpha;
 }
+
+.navbar__logo {
+  height: 3rem; /* default is usually 2rem — increase this number */
+}

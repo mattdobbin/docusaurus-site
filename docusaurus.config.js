@@ -53,6 +53,8 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',*/
         },
         blog: {
+          path: 'ai-workflows',
+          routeBasePath: 'ai-workflows',
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -86,16 +88,16 @@ const config = {
         //title: 'My Site',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/brackets-logo-2.png'
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'User Docs',
+            label: 'Doc Samples',
           },
-          {to: '/blog', label: 'Developer Docs', position: 'left'},
+          {to: '/ai-workflows', label: 'AI Worflows', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -103,18 +105,14 @@ const config = {
           },
         ],
       },
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+        },
+      },
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
           {
             title: 'Community',
             items: [
@@ -136,8 +134,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'AI Workflows',
+                to: '/ai-workflows',
               },
               {
                 label: 'GitHub',
