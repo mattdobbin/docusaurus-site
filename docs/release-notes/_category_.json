@@ -2,6 +2,7 @@
   "label": "Release Notes",
   "position": 3,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "slug": "/release-notes"
   }
 }
