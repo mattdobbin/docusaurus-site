@@ -29,11 +29,11 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Hides the next and previous pagination controls sitewide
+/*Hides the next and previous pagination controls sitewide*/
 .pagination-nav {
   display: none;
 }
-*/
+
 
 /* Second-level ordered lists */
 ol ol {
