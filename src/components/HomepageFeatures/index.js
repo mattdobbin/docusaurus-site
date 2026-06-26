@@ -5,6 +5,14 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+      <div className="row">
+          <div className="col col--8 col--offset-2 text--center">
+            <Heading as="h2">About me</Heading>
+            <p>
+            blah blah blah blah text text corporate dribble blah blah blah blah text text corporate dribble blah blah blah blah text text corporate dribble blah blah blah blah text text corporate dribble blah blah blah blah text text corporate dribble 
+            </p>
+          </div>
+        </div>
         <div className="row">
           <div className="col col--8 col--offset-2 text--center">
             <Heading as="h2">About this site</Heading>

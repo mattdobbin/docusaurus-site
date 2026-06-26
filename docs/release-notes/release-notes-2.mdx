@@ -2,4 +2,26 @@
 sidebar_position: 2
 ---
 
-# Release Notes - Sample 2
+# Release Notes - Resolved Issues
+An example of bug summaries for a base release.
+
+**Jump to:**
+[Markdown Version](#markdown-version) · [Original MadCap Flare Web Output](#madcap-flare-web-output)
+
+## Markdown Version
+
+### Payroll (UK)
+
+| ID | Description |
+|----|-------------|
+| GPTCI-62561 | Fixed an issue that could occur when you changed an employee's National Insurance (NI) letter in the **Payroll > Tax Definitions** screen in People. In some cases, the employee's payslip didn't show the updated NI letter. |
+| GPTCI-62562 | Fixed an issue that could occur when you committed a pay run. In some cases, the Payroll Output – Disbursement background job failed with an error, which prevented reports from generating in the **Payroll > Archived Reports** tab. |
+| GPTCI-62624<br />PICI-1311 | Fixed an issue that could occur in the Arrestment Payments Full Details report where the amount in the **Total Amount Paid** field was incorrectly doubled. |
+| GPTCI-64028 | Fixed an issue that could occur in **System Admin > System Notifications** in the **Subscriptions** tab. In some cases, the Year End – UK Tax Form Notification didn't show in the list of available notifications. |
+| GPTCI-64390 | Fixed an issue that could occur in **Payroll > Pay Run Management**, in the **Employee Preview** slide-out panel, for employees with multiple quick entries with different check templates in the pay run. In the **Tax Detail Preview** tab, employee and employer NI contribution band fields such as **Earnings Up To LEL** were incorrectly set to a negative amount. |
+| GPTCI-65140 | Fixed an issue that could occur if an employee withdrew two on-demand payments within one minute. In some cases, the application didn't process the second payment correctly. |
+| GPTCI-65141 | Fixed an issue that could occur in **Payroll > Pay Run Management** where pay run data didn't populate in the **Preview > Summary** subtab. |
+
+## MadCap Flare Web Output
+
+![An image from the static](/samples/RN-bugs-df.png)
