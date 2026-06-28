@@ -1,0 +1,178 @@
+---
+sidebar_position: 4
+---
+
+# API Documentation
+
+Help topic from a guide intended for developers who create code to interact with the Dayforce REST services API.
+
+## RESTful Web Services Developer Guide
+
+The HTTP verbs POST, PATCH, and DELETE are used to process inserts, updates, and deletions to employee time entry information. Insert and update capabilities support adding new time entries for an employee and updating time entries for an existing employee.
+
+### POST Employee Punches
+
+This POST operation adds an employee time entry. The operation uses the following URL:
+
+```
+https://www.dayforcehcm.com/api/CompanyName/V1/EmployeePunches
+```
+
+**Role feature access:** HCM Anywhere > Web Services > Patch/Post/Delete Employee Time Entry
+
+#### Parameters
+
+| Parameter | Description |
+|---|---|
+| `isValidateOnly` | Specifies that all validations are performed without committing any changes. Use this parameter to control whether committing information in your Dayforce instance is your responsibility. |
+
+The URL syntax is:
+
+```
+https://www.dayforcehcm.com/api/CompanyName/V1/EmployeePunches?isValidateOnly=true
+```
+
+#### Request Body
+
+The request body contains the values that need to be inserted into the available data entities.
+
+```json
+{
+  "PunchXRefCode": "string",
+  "EmployeeXRefCode": "string",
+  "TimeStart": "2025-02-20T21:39:04.818Z",
+  "TimeEnd": "2025-02-20T21:39:04.818Z",
+  "DeptJobXRefCode": "string",
+  "OrgUnitXRefCode": "string",
+  "PayAdjustCodeXRefCode": "string",
+  "ProjectXRefCode": "string",
+  "DocketXRefCode": "string",
+  "Quantity": 0,
+  "EmployeeAuthorized": true,
+  "ManagerAuthorized": true,
+  "MealBreaks": [
+    {
+      "MealBreakType": "string",
+      "TimeStart": "2025-02-20T21:39:04.818Z",
+      "TimeEnd": "2025-02-20T21:39:04.818Z"
+    }
+  ],
+  "Transfers": [
+    {
+      "TimeStart": "2025-02-20T21:39:04.818Z",
+      "DeptJobXRefCode": "string",
+      "OrgUnitXRefCode": "string",
+      "PayAdjustCodeXRefCode": "string",
+      "ProjectXRefCode": "string",
+      "DocketXRefCode": "string",
+      "Quantity": 0,
+      "TransferLaborMetrics": [
+        {
+          "LaborMetricsTypeXRefCode": "string",
+          "LaborMetricsCodeXRefCode": "string"
+        }
+      ]
+    }
+  ],
+  "PunchLaborMetrics": [
+    {
+      "LaborMetricsTypeXRefCode": "string",
+      "LaborMetricsCodeXRefCode": "string"
+    }
+  ]
+}
+```
+
+### PATCH Employee Punches
+
+This PATCH operation updates an employee time entry. The operation uses the following URL:
+
+```
+https://www.dayforcehcm.com/api/CompanyName/V1/EmployeePunches/{xRefCode}
+```
+
+**Role feature access:** HCM Anywhere > Web Services > Patch/Post/Delete Employee Time Entry
+
+#### Parameters
+
+| Parameter | Description |
+|---|---|
+| `xRefCode` | The XRefCode of the time entry that you want to update. |
+| `isValidateOnly` | Specifies that all validations are performed without committing any changes. Use this parameter to control whether committing information in your Dayforce instance is your responsibility. |
+
+The URL syntax is:
+
+```
+https://www.dayforcehcm.com/api/CompanyName/V1/EmployeePunches/{xRefCode}?isValidateOnly=true
+```
+
+#### Request Body
+
+The request body contains the data entities and elements that need to be processed within a structure that can be interpreted by Dayforce web services.
+
+```json
+{
+  "PunchXRefCode": "string",
+  "EmployeeXRefCode": "string",
+  "TimeStart": "2025-02-20T21:52:34.798Z",
+  "TimeEnd": "2025-02-20T21:52:34.798Z",
+  "DeptJobXRefCode": "string",
+  "OrgUnitXRefCode": "string",
+  "PayAdjustCodeXRefCode": "string",
+  "ProjectXRefCode": "string",
+  "DocketXRefCode": "string",
+  "Quantity": 0,
+  "EmployeeAuthorized": true,
+  "ManagerAuthorized": true,
+  "MealBreaks": [
+    {
+      "MealBreakType": "string",
+      "TimeStart": "2025-02-20T21:52:34.798Z",
+      "TimeEnd": "2025-02-20T21:52:34.798Z"
+    }
+  ],
+  "Transfers": [
+    {
+      "TimeStart": "2025-02-20T21:52:34.798Z",
+      "DeptJobXRefCode": "string",
+      "OrgUnitXRefCode": "string",
+      "PayAdjustCodeXRefCode": "string",
+      "ProjectXRefCode": "string",
+      "DocketXRefCode": "string",
+      "Quantity": 0,
+      "TransferLaborMetrics": [
+        {
+          "LaborMetricsTypeXRefCode": "string",
+          "LaborMetricsCodeXRefCode": "string"
+        }
+      ]
+    }
+  ],
+  "PunchLaborMetrics": [
+    {
+      "LaborMetricsTypeXRefCode": "string",
+      "LaborMetricsCodeXRefCode": "string"
+    }
+  ]
+}
+```
+
+### DELETE Employee Punches
+
+This DELETE operation deletes a specific employee time entry. The operation uses the following URL:
+
+```
+https://www.dayforcehcm.com/api/CompanyName/V1/EmployeePunches
+```
+
+**Role feature access:** HCM Anywhere > Web Services > Patch/Post/Delete Employee Time Entry
+
+#### Parameters
+
+| Parameter | Description |
+|---|---|
+| `employeePunchXRefCode` (string) | The unique identifier (external reference code) of the employee time entry to delete. The value provided must be an exact match, otherwise a 400 error is returned. This parameter is required. |
+
+:::note
+All data associated with the time entry will be deleted, including any tardy pay adjustments, labor metrics, transfers, meals, and breaks linked to it.
+:::

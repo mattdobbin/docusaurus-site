@@ -2,5 +2,50 @@
 sidebar_position: 3
 ---
 
-# Admin Guide - Sample 2
+# Administrator Guide - Sample 2
 
+Procedural topic for the Dayforce Payroll Admin Guide, intended for payroll specialists who configure the software.
+
+**Jump to:**
+[Original MadCap Flare Web Output](#madcap-flare-web-output)
+
+## Enhanced Reporting Requirements (ERR) Submissions
+
+Employers in Ireland are required to report additional details of certain expenses and benefits to Revenue Online Service (ROS). The payment categories that must be reported to ROS are:
+
+- Travel and subsistence
+- Small benefits vouchers
+- Remote working daily allowance
+
+For more information on the enhanced reporting requirements, see the [Revenue website](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/err-jan-2024/index.aspx).
+
+When you commit a normal or off-cycle pay run that includes ERR payments, an ERR submission is created and sent to Revenue at the same time as the Payment Submission Request (PSR). You can configure and categorize the allowances that are included in ERR submissions and preview active submissions.
+
+### Include and Categorize Allowances in ERR Submissions
+
+In the **Payroll Set-up > Earnings and Deductions** screen, you can configure the allowances that are included in ERR submissions. When the **Expense Type for ERR** drop-down list is populated in an allowance, that allowance is included in ERR submissions. The **Expense Type for ERR** drop-down list only shows in allowances where the **Allowance Type** field, in the **Tax and Compliance** subtab, is set to **Reimbursement** or **Memo Calc**.
+
+To include allowances in ERR submissions:
+
+1. Go to **Payroll Set-up > Earnings and Deductions**.
+2. In the **Earnings** tab, select an Ireland allowance with the **Reimbursement** or **Memo Calc** earning type.
+3. In the **Options** tab in the **Settings by Country** section, select an expense type in the **Expense Type for ERR** drop-down list. When the drop-down list is populated, the allowance is included in ERR submissions and categorized under the expense type that you select.
+
+<img src="/docusaurus-site/samples/err-inline.png" alt="The Settings by Country section with the Expense Type for ERR drop-down list highlighted." style={{border: '1px solid black'}} />
+
+### Preview an Active ERR Submission
+
+**Role feature access:** Payroll > Pay Run Management > Preview
+
+You can preview active ERR submissions in **Payroll > Pay Run Management** in the **Preview > ERR Submissions** subtab. The tab shows the payments that will be included in the ERR submission for the pay run, with additional information such as the ERR Submission Reference number, Line Item ID, Category, and subcategory of the payment.
+
+### Review an Archived ERR Submission
+
+After you commit a pay run that includes an ERR submission, the following reports are created and can be downloaded in the **Payroll > Archived Reports** screen:
+
+- **ERR Summary Report Legal Entity**: Shows the payment totals for the legal entity that were reported to Revenue for each expense and benefit in the pay run.
+- **ERR Summary Report Legal Entity Employees**: Shows the individual employee line items that were reported to Revenue in the pay run.
+
+## MadCap Flare Web Output
+<img src="/docusaurus-site/samples/err-1.png" alt="The ERR Submissions topic in it's original help portal built in MadCap Flare." style={{border: '1px solid black'}} />
+<img src="/docusaurus-site/samples/err-2.png" alt="The ERR Submissions topic in it's original help portal built in MadCap Flare." style={{border: '1px solid black'}} />
