@@ -9,7 +9,8 @@ export default function HomepageFeatures() {
           <div className="col col--8 col--offset-2 text--center">
             <Heading as="h2">About me</Heading>
             <p>
-            blah blah blah blah text text corporate dribble blah blah blah blah text text corporate dribble blah blah blah blah text text corporate dribble blah blah blah blah text text corporate dribble blah blah blah blah text text corporate dribble 
+            Experienced tech professional with a focus in developing and maintaining technical documentation for end users and technical audiences.
+            11 years of experience documenting enterprise software and hardware products across a range of industries, including cybersecurity, fintech, HCM, and health tech.
             </p>
           </div>
         </div>
